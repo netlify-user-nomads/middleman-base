@@ -70,3 +70,10 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+activate :contentful do |f|
+  f.space         = {Test: 'g5h8k8z0m9iv'}
+  f.access_token  = '116c55cdfa2a833cc4a9e1e8aad7301f26d5b4b32557ac02ee603a778345bffd'
+  f.cda_query     = { content_type: '3q5sMYOdPOC4oWWWKqcwEI', 'sys.updatedAt[gte]' => '2015-04-01T00:00:00Z',include: 1 }
+  f.content_types = { Article: '3q5sMYOdPOC4oWWWKqcwEI'}
+end
