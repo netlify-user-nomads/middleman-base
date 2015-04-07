@@ -72,8 +72,8 @@ configure :build do
 end
 
 activate :contentful do |f|
-  f.space         = {Test: 'g5h8k8z0m9iv'}
-  f.access_token  = '116c55cdfa2a833cc4a9e1e8aad7301f26d5b4b32557ac02ee603a778345bffd'
-  f.cda_query     = { content_type: '3q5sMYOdPOC4oWWWKqcwEI', 'sys.updatedAt[gte]' => '2015-04-01T00:00:00Z',include: 1 }
-  f.content_types = { Article: '3q5sMYOdPOC4oWWWKqcwEI'}
+  f.space         = {Post: '3xd90w541h4n'}
+  f.access_token  = '52db1d07bf02303addee5285b6b56f554dd6efd400943a0f82418acd330c4b8c'
+  f.cda_query     = { content_type: 'eR4h8IGlzyq6Ck2AueCSm'}
+  f.content_types = { Post: 'eR4h8IGlzyq6Ck2AueCSm'}
 end
