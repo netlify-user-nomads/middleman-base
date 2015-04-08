@@ -2,18 +2,10 @@
 title: Welcome to Middleman
 ---
 
+<div class="welcome">
+  <h1>Middleman is Watching</h1>
+  <p class="doc">
+    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
+  </p><!-- .doc -->
+</div><!-- .welcome -->
 
-<div>
-  <% data.Test.Article.each do |id, article| %>
-	<% if !article.listing_image.empty? %>
-	  <%= image_tag article.listing_image.url, alt: 'logo', class: 'img-responsive' %>
-	<% end %>
-	<hr>
-    <h2><%= article["title"] %></h2><%= article["author"] %><br><%= article["date"].strftime('%b %e') %><br><%= article["body"] %>
-	<% if !article.image.empty? %>
-	  <%= image_tag article.image.url, alt: 'logo', class: 'img-responsive' %>
-	<% end %>
-	<hr>
-  
-  <% end %>
-</div>
