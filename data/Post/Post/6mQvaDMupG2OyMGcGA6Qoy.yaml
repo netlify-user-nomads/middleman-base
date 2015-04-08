@@ -1,0 +1,19 @@
+---
+:id: 6mQvaDMupG2OyMGcGA6Qoy
+:title: Putting the Pieces Together
+:image:
+  :title: banner-programming
+  :url: //images.contentful.com/3xd90w541h4n/4E4jsBnVSUgYOsACCacQuQ/086fe59d9b4459b7816ff8c94c8ac297/banner-programming.jpg
+:body: ! 'With the Roots project now built on top of data from Contentful, we then
+  set about automating deployment when content changed. First, on Netlify, we created
+  a webhook endpoint that would start a new build and deploy the project whenever
+  it received a POST request. Then, we set up a webhook in Contentful with the new
+  Netlify endpoint as the destination URL. With this in place, every time an editor
+  creates, deletes, or edits a new piece of content, Netlify receives a webhook from
+  Contentful and kicks off a new deploy. Netlify runs roots compile, loads the new
+  Contentful data with roots-contentful, optimizes our assets, and finally pushes
+  it out to a global CDN. Within a couple minutes from publishing, our new content
+  is live on our static site.
+
+
+  The Result'

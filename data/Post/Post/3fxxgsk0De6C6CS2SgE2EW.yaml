@@ -1,0 +1,12 @@
+---
+:id: 3fxxgsk0De6C6CS2SgE2EW
+:title: Contentful change
+:image:
+  :title: banner-programming
+  :url: //images.contentful.com/3xd90w541h4n/4E4jsBnVSUgYOsACCacQuQ/086fe59d9b4459b7816ff8c94c8ac297/banner-programming.jpg
+:body: Netlify is an outstanding static hosting platform that provides several useful
+  features that bring the rest of our tools together. It supports Node.js tools like
+  Roots, so when we deploy it can resolve all our npm dependencies, install roots,
+  and run our roots compile build command without a hitch. Once the build is complete,
+  we specify a folder to deploy (public in the case of Roots) and Netlify optimizes
+  all our assets and pushes it out to a global CDN.
