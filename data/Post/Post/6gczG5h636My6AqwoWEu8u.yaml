@@ -1,0 +1,21 @@
+---
+:id: 6gczG5h636My6AqwoWEu8u
+:title: The Challenge
+:body: ! 'However, even with dynamic content in place, every update still required
+  a developer to update the repo and deploy the site. Even though this only took a
+  minute, it created a bottleneck for our content managers and added up to a significant
+  amount of developer time.
+
+
+  In order to make this idea work at a large scale at our company and on bigger projects,
+  we needed to figure out how to automate the management, build, and deployment of
+  static sites.
+
+
+  We made a couple attempts to build a tool ourselves, however we quickly realized
+  that building a fully functioning CMS is a lot of work for an agency with many competing
+  demands for our dev team. We didn''t want to reinvent the wheel, so instead we started
+  to research how we could piece together third party tools into a workable solution.'
+:image:
+  :title: t1
+  :url: //assets.contentful.com/3xd90w541h4n/44N4MAGDbyIw2YmU2wq0Iu/0eabceffa2ae23ddd1344eedb6d9bdbe/t1.svg
