@@ -16,6 +16,6 @@ end
 
 desc "Build & deploy to Github Pages"
 task :deploy do
+  system "middleman contentful"
   build
-  system "netlify deploy"
 end
