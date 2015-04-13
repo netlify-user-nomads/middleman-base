@@ -6,7 +6,7 @@ title: Welcome to Middleman
 <ol>
   <% data.Post.Post.each do |id, partner| %>
     <li>
-	<h2><%= partner["title"] %><h2>
+	<h3><%= partner["title"] %><h3>
 	<% if !partner.image.empty? %>
 	  <%= image_tag partner.image.url, alt: 'logo', class: 'img-responsive' %>
 	<% end %>
