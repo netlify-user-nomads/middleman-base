@@ -331,82 +331,28 @@ title: Welcome to SmartShift
                                                             </div>
                                                         </div>
                                                         <div class="view-content">
+															<% data.SmartShift.Keep.each do |id, article| %>
                                                             <div class="views-row views-row-1 views-row-odd views-row-first">
                                                                 <div class="views-field views-field-nothing">        
                                                                     <span class="field-content">
                                                                         <div class="col-md-3 col-sm-6">
                                                                             <div class="thumbnail" style="height: 608px;">
-                                                                                <%= image_tag 'SAPPHIRE%202015%20-%20Text%20Box%20Image.png' %>
+																			<% if !article.image.empty? %>
+																			  <%= image_tag article.image.url, alt: 'logo', class: 'img-responsive' %>
+																			<% end %>
                                                                                 <div class="caption">
-                                                                                    <h3>Join Us on May 5-7 2015 in Orlando, Florida</h3>
+                                                                                    <h3><%= article["title"] %></h3>
                                                                                     <div class="keep_upto_date_desc">
-                                                                                        <p>Talk to Us About a Faster Path to HANA Readiness &amp; Migration</p>
-                                                                                        <p><strong>Our Speaker Session:</strong><br>May 5th at 12:30 pm ET<br>"Changes to Custom Development with the Advent of SAP HANA"</p>
-                                                                                        <p>&nbsp;</p>
-                                                                                        <p><strong>Book a Meeting</strong> at SAPPHIRE<br>smartShift or Talk to Us Today</p>
-                                                                                        <p>&nbsp;</p>
+                                                                                        <%= article["description"]  %>
                                                                                     </div>
-                                                                                    <a href="http://info.smartshifttech.com/schedule-meeting-at-sapphire" class="readmore_style1 GoogleAnalyticsET-processed" target="_blank">Read More</a>                        
+																					<a href="<%= article["link"]  %>" class="readmore_style1 GoogleAnalyticsET-processed" target="_blank">Read More</a>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </span>  
                                                                 </div>  
                                                             </div>
-                                                            <div class="views-row views-row-2 views-row-even">
-                                                                <div class="views-field views-field-nothing">      
-                                                                    <span class="field-content">
-                                                                        <div class="col-md-3 col-sm-6">
-                                                                            <div class="thumbnail" style="height: 608px;">
-                                                                                <%= image_tag 'kutd1.jpg' %>
-                                                                                <div class="caption">
-                                                                                    <h3>Read 4 Compelling Reasons Why You Shouldn't Delay Implementation of SAP HANA</h3>
-                                                                                    <div class="keep_upto_date_desc">
-                                                                                        <p>There is a clear business case that justifies transforming your enterprise software with HANA; it’s a step that, with the right processes, will take performance to a new level and free up resources to tackle other priorities more effectively.</p>
-                                                                                    </div>
-                                                                                    <a href="http://info.smartshifttech.com/delaying-implementation-of-sap-hana-4-compelling-answers-to-change-your-mind" class="readmore_style1 GoogleAnalyticsET-processed" target="_blank">Read More</a>                        
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </span>  
-                                                                </div>  
-                                                            </div>
-                                                            <div class="views-row views-row-3 views-row-odd">
-                                                                <div class="views-field views-field-nothing">        
-                                                                    <span class="field-content">
-                                                                        <div class="col-md-3 col-sm-6">
-                                                                            <div class="thumbnail" style="height: 608px;">
-                                                                                <%= image_tag 'Stefan_Hetges.jpg' %>
-                                                                                <div class="caption">
-                                                                                    <h3>Advantages of Automated Modernization Every CIO Must Know</h3>
-                                                                                    <div class="keep_upto_date_desc">
-                                                                                        <p>For companies that rely on legacy SAP applications, legacy modernization is becoming more necessary than ever to maintain competitive advantage on new platforms and the cloud without losing already developed custom processes.</p>
-                                                                                    </div>
-                                                                                    <a href="http://info.smartshifttech.com/advantages-of-automated-modernization-every-cio-must-know" class="readmore_style1 GoogleAnalyticsET-processed" target="_blank">Read More</a>                        
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </span>  
-                                                                </div>  
-                                                            </div>
-                                                            <div class="views-row views-row-4 views-row-even views-row-last">
-                                                                <div class="views-field views-field-nothing">        
-                                                                    <span class="field-content">
-                                                                        <div class="col-md-3 col-sm-6">
-                                                                            <div class="thumbnail" style="height: 608px;">
-                                                                                <%= image_tag 'kutd3_1.jpg' %>
-                                                                                <div class="caption">
-                                                                                    <h3>White Paper - 8 Benefits of Automated Optimization of SAP HANA®</h3>
-                                                                                    <div class="keep_upto_date_desc">
-                                                                                        <p>Changing your database architecture requires changing your application architecture for optimum performance. But how do you do it when you are so pressed on time, budget, and other priorities?</p>
-                                                                                    </div>
-                                                                                    <a href="http://info.smartshifttech.com/white-paper-hana-automation" class="readmore_style1 GoogleAnalyticsET-processed" target="_blank">Read More</a>                        
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </span>  
-                                                                </div>  
-                                                            </div>
+															<% end %>
                                                         </div>
                                                     </div>  
                                                 </div>
