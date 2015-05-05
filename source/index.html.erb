@@ -21,26 +21,7 @@ title: Welcome to SmartShift
             <% end %>
 
         </div>
-        <div id="slidemenu">
-            <div class="region region-navigation">
-                <div id="block-menu-block-5" class="block block-menu-block">
-                    <div class="content">
-                        <div class="menu-block-wrapper menu-block-5 menu-name-main-menu parent-mlid-0 menu-level-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="active"><a href="source/images/Enterprise Software Management and Consolidation _ smartShift.html" class="active">Why smartshift</a></li>
-                                <li><a href="http://www.smartshifttech.com/solutions">Our Solutions</a></li>
-                                <li><a href="http://www.smartshifttech.com/how-we-work">How we work</a></li>
-                                <li><a href="http://www.smartshifttech.com/about-us">About Us</a></li>
-                                <li><a href="http://www.smartshifttech.com/contact">Contact</a></li>
-                                <li><a href="https://smartshiftme.com/saasapp/login.jsp" class="boxlink GoogleAnalyticsET-processed" target="_blank">Login</a></li>
-                                <li id="callusbt" class="active"><a data-toggle="modal" data-target="#basicModal" class="boxlink2 GoogleAnalyticsET-processed" href="http://www.smartshifttech.com/#"> Request Call </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
+		<%= partial "/layouts/partials/head" %>
     </div>
 </div>
 
@@ -240,52 +221,33 @@ title: Welcome to SmartShift
                                                                     <div class="client_data">
                                                                         <div class="client_content">
                                                                             <div class="arrow_left">
-                                                                                <a href="http://www.smartshifttech.com/#clientarea-carousal" role="button" data-slide="prev"><br>
+                                                                                <a href="#clientarea-carousal" role="button" data-slide="prev"><br>
                                                                                     <%= image_tag 'arrow_left.png' %><br>
                                                                                 </a>
                                                                             </div>
                                                                             <div class="arrow_right">
-                                                                                <a href="http://www.smartshifttech.com/#clientarea-carousal" role="button" data-slide="next"><br>
+                                                                                <a href="#clientarea-carousal" role="button" data-slide="next"><br>
                                                                                     <%= image_tag 'arrow_right.png' %><br>
                                                                                 </a>
                                                                             </div>
                                                                             <div class="main_content_slider_wrapper">
                                                                                 <div class="carousel-inner anim content-slider-wrapper " role="listbox">
-                                                                                    <div class="active item ">
+                                                                                    <% data.SmartShift.Clients.each do |id, article| %>
+																					<% if article.title == 'RUDOLF TREMMEL' %>
+																					  <div class="item active">
+																					<% else %>
+																					  <div class="item">
+																					<% end %>
                                                                                         <div class="circle_slider_text_wrapper">
-                                                                                            <%= image_tag 'logo_bmw_3.png' %>
-                                                                                            <h3>RUDOLF TREMMEL<br><p>SAP HR Project Manager at BMW</p></h3>
-                                                                                            <div class="client_desc">"The use of the smartShift solutions for our SAP upgrade project, including the code optimization, enabled us to achieve a high quality outcome and significantly reduce the project’s runtime. smartShift improved our ability to consistently manage cost and project risk due to the speed and accuracy of their code."</div>
+																							<% if !article.image.empty? %>
+																							<%= image_tag article.image.url %>
+																							<% end %>
+                                                                                            <h3><%= article["title"] %><br><p><%= article["role"] %></p></h3>
+                                                                                            <div class="client_desc"><%= article["description"] %></div>
                                                                                         </div>    
                                                                                     </div>
-                                                                                    <div class="item ">
-                                                                                        <div class="circle_slider_text_wrapper">
-                                                                                            <%= image_tag 'logo_sihi.png' %>
-                                                                                            <h3>JACKY KUGLER<br><p>Head of Department Systems, Networks and Backoffice Automation Sterling SIHI GmbH </p></h3>
-                                                                                            <div class="client_desc">"smartShift was an essential component that allowed us to fulfill our Unicode migration project on time and on budget, instead of handling potential risks going with the manual approach. The high quality and very low testing efforts contributed to an overall project success."</div>
-                                                                                        </div>    
-                                                                                    </div>
-                                                                                    <div class="item ">
-                                                                                        <div class="circle_slider_text_wrapper">
-                                                                                            <%= image_tag 'Quote%20unknown%20icon.png' %>
-                                                                                            <h3><br><p>CIO for Global Energy Company</p></h3>
-                                                                                            <div class="client_desc">"In less than three weeks, smartShift automatically uncovered and fixed 99.6% of 425,558 ABAP issues. This eliminated months of manual coding and testing from our SAP release and Unicode upgrade. Plus, we saw dramatic gains in our SAP system performance."</div>
-                                                                                        </div>    
-                                                                                    </div>
-                                                                                    <div class="item ">
-                                                                                        <div class="circle_slider_text_wrapper">
-                                                                                            <%= image_tag 'Quote%20unknown%20icon.png' %>
-                                                                                            <h3>Bradley Case<br><p>Chief Development Officer, Symphony Corporation</p></h3>
-                                                                                            <div class="client_desc">"We were on a very tight timeline to make our AWS environment HIPAA compliant.  smartShift delivered on all the requirements and executed their professional services over a weekend to meet our deadline. They are customer service driven, responsive and professional.  All-in-all a great firm, I would recommend them to anyone."</div>
-                                                                                        </div>    
-                                                                                    </div>
-                                                                                    <div class="item ">
-                                                                                        <div class="circle_slider_text_wrapper">
-                                                                                            <%= image_tag 'Quote%20unknown%20icon.png' %>
-                                                                                            <h3>Derek Prior<br><p>Analyst at Gartner</p></h3>
-                                                                                            <div class="client_desc">"Global rollouts of business applications, especially ERP, take several years to complete. But business leaders can't wait for these rollouts to finish before deploying new differentiating systems"</div>
-                                                                                        </div>    
-                                                                                    </div>
+																					<% end %>
+                                                                                    
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -353,6 +315,7 @@ title: Welcome to SmartShift
                                                                 </div>  
                                                             </div>
 															<% end %>
+                                                            
                                                         </div>
                                                     </div>  
                                                 </div>

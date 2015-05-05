@@ -74,6 +74,6 @@ end
 activate :contentful do |f|
   f.space         = {SmartShift: 'px0dm4wqzul1'}
   f.access_token  = '1afcf1f81058681241fe393b110e204546e9817ba1a00bdc869bb9bf935d6ca1'
-  f.cda_query     = { content_type: '6k3plA0080AooWcqA202ME'}
-  f.content_types = { Keep: '6k3plA0080AooWcqA202ME'}
+  f.cda_query     = { include: 1 }
+  f.content_types = { Keep: '6k3plA0080AooWcqA202ME',Clients: 'VHutoNmkeIAAGguGiccWK'}
 end
