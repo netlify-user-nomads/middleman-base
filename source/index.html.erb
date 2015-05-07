@@ -210,75 +210,9 @@ title: Welcome to SmartShift
                                 </div>
                                 <div class="panel-separator"></div>
                                 <div class="panel-pane pane-panels-mini pane-customer-slider">
-                                    <div class="pane-content">
-                                        <div class="">      
-                                            <div class="panel-pane pane-views pane-customers row clearfix" id="clientarea">
-                                                <div class="pane-content">
-                                                    <div class="view view-customers view-id-customers view-display-id-block_2 view-dom-id-b1689be1a6c86a51fc95f1ca4b14850e">
-                                                        <div class="view-content col-md-12 column">
-                                                            <div id="clientarea-carousal" class="carousel slide" data-ride="carousel" data-interval="false">
-                                                                <div class="client-slide">
-                                                                    <div class="client_data">
-                                                                        <div class="client_content">
-                                                                            <div class="arrow_left">
-                                                                                <a href="#clientarea-carousal" role="button" data-slide="prev"><br>
-                                                                                    <%= image_tag 'arrow_left.png' %><br>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="arrow_right">
-                                                                                <a href="#clientarea-carousal" role="button" data-slide="next"><br>
-                                                                                    <%= image_tag 'arrow_right.png' %><br>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="main_content_slider_wrapper">
-                                                                                <div class="carousel-inner anim content-slider-wrapper " role="listbox">
-                                                                                    <% data.SmartShift.Clients.each do |id, article| %>
-																					<% if article.title == 'RUDOLF TREMMEL' %>
-																					  <div class="item active">
-																					<% else %>
-																					  <div class="item">
-																					<% end %>
-                                                                                        <div class="circle_slider_text_wrapper">
-																							<% if !article.image.empty? %>
-																							<%= image_tag article.image.url %>
-																							<% end %>
-                                                                                            <h3><%= article["title"] %><br><p><%= article["role"] %></p></h3>
-                                                                                            <div class="client_desc"><%= article["description"] %></div>
-                                                                                        </div>    
-                                                                                    </div>
-																					<% end %>
-                                                                                    
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>	
-                                                        </div>
-                                                    </div>  
-                                                </div>
-                                            </div>
-                                        </div>  
-                                    </div>
-                                </div>
+                                <%= partial "/layouts/partials/clients_slider" %>	   
                                 <div class="panel-separator"></div>
-                                <div class="panel-pane pane-panels-mini pane-get-stay-clean row clearfix" id="gcsc">
-                                    <div class="pane-content">
-                                        <div class="panel-pane pane-dsc">
-                                            <div class="pane-content">
-                                                <div class="col-md-12 column">
-                                                    <div class="gcsc_slide"><h2>Become part of the<br> smartShift revolution</h2>
-                                                        <div class="gcsc_brief">
-                                                            <p>Find out more about our automation approach and how it can transform enterprise software management for your organization.</p>
-                                                        </div>
-                                                        <a data-toggle="modal" data-target="#basicModal" class="btn btn-primary readmore_style3 GoogleAnalyticsET-processed" href="http://www.smartshifttech.com/#" role="button">REQUEST CALL</a>
-                                                        <a class="btn btn-default readmore_style2" href="http://www.smartshifttech.com/node/130" role="button">GET IN TOUCH</a> 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <%= partial "/layouts/partials/become_part" %>	
                                 <div class="panel-separator"></div>
                                 <%= partial "/layouts/partials/keep_up_to_date" %>	
                             </div>
