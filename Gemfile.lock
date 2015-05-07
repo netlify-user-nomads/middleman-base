@@ -147,6 +147,7 @@ PLATFORMS
 DEPENDENCIES
   contentful_middleman
   middleman (~> 3.3.10)
+  middleman-blog (~> 3.5.3)
   middleman-livereload (~> 3.4.2)
   tzinfo-data
   wdm (~> 0.1.0)

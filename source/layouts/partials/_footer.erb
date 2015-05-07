@@ -1,0 +1,181 @@
+<div id="footer">
+        <div class="container-fluid">
+            <div class="row footer_slide">
+                <div class="region region-footer">
+                    <div class="block block-block" id="block-block-19">
+                        <div class="content clearfix">
+                            <div class="region region-footer">	
+                                <div id="block-panels-mini-smartshift-footer" class="block block-panels-mini">
+                                    <div class="content">
+                                        <div class="panel-pane pane-dsc col-md-4 col-sm-12 footer-logo custom-footer">
+                                            <div class="pane-content">
+                                                <div class="logo-part">
+                                                    <%= image_tag 'logo.png' %>
+                                                </div>
+                                                <div class="logo-part-desc">Leading the enterprise software management revolution.</div>  
+                                            </div>
+                                        </div>
+                                        <div class="panel-separator"></div>
+                                        <div class="panel-pane pane-block pane-menu-menu-footer-navigate col-md-2 col-sm-3 footer-navigate custom-footer pane-menu">
+                                            <div class="pane-content">
+                                                <div class="footer_title">Navigate</div>
+                                                <ul class="footer-navigation">
+                                                    <li><%= link_to("Why smartshift", "/") %></li>
+													<li><%= link_to("Our Solutions", "/our-solution.html") %></li>
+													<li><%= link_to("How we work", "/how-we-work.html") %></li>
+													<li><%= link_to("About Us", "/about.html") %></li>
+													<li><%= link_to("Contact", "/contact.html") %></li>
+                                                    <li><%= link_to("Login", "https://smartshiftme.com/saasapp/login.jsp", :target => "_blank", :class => "") %></li>
+                                                    <li><a href="/contact.html#careers">Careers</a></li>
+                                                </ul>  
+                                            </div>
+                                        </div>
+                                        <div class="panel-separator"></div>
+                                        <div class="panel-pane pane-block pane-menu-menu-footer-connect col-md-2 col-sm-3 footer-connect custom-footer pane-menu">
+                                            <div class="pane-content">
+                                                <div class="footer_title">Connect</div>
+                                                <ul class="footer-navigation">
+												<% data.SmartShift.Social.each do |id, article| %>
+												<li><%= link_to(article["title"], article["link"], :target => "_blank", :class => "") %></li>
+                                                <% end %>
+												</ul>  
+                                            </div>
+                                        </div>
+                                        <div class="panel-separator"></div>
+                                        <div class="panel-pane pane-dsc col-md-2 col-sm-3 footer-callus custom-footer">
+                                            <div class="pane-content">
+                                                <div class="footer_title">Call us</div>							
+                                                <ul class="footer-navigation">
+													<% data.SmartShift.CallUs.each do |id, article| %>
+													<li><%= article["description"] %></li>
+													<% end %>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="panel-separator"></div>
+                                        <div class="panel-pane pane-block pane-menu-menu-footer-legal col-md-2 col-sm-3 footer-legal custom-footer pane-menu">
+                                            <div class="pane-content">
+                                                <div class="footer_title">Legal</div>
+                                                <ul class="footer-navigation">
+                                                    <li><%= link_to("Terms of Use", "/terms-condition.html") %></li>
+													<li><%= link_to("Privacy Policy", "/privacy.html") %></li>
+                                                </ul>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="region region-copyrights">
+                        <div id="block-panels-mini-copyrights" class="block block-panels-mini">
+                            <div class="content">
+                                <div class="panel-pane pane-dsc">
+                                    <div class="pane-content">© 2015 smartShift Technologies Inc.  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	    <div class="modal fade callback" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="webform-ajax-wrapper-1">
+                        <form class="webform-client-form webform-client-form-1" enctype="multipart/form-data" action="source/images/Enterprise Software Management and Consolidation _ smartShift.html" method="post" id="webform-client-form-1" accept-charset="UTF-8" novalidate="novalidate">
+                            <div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-item webform-component webform-component-markup webform-component--header">
+                                        <div class="col-md-12 col-sm-12">
+                                            <h2 class="page-header">Request Call</h2>                 
+                                            <p class="contact-header-text">Fill out the form and a smartShift consultant will get in touch with you within 24 hours. Whether you’re seeking advice, interested in a demo or ready for your next IT transformation, we’re here to help.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 form-item webform-component webform-component-textfield webform-component--first-name">
+                                            <label class="element-invisible" for="edit-submitted-first-name">First name <span class="form-required" title="This field is required.">*</span></label>
+                                            <input placeholder="FIRST NAME" class="form-control form-text required" type="text" id="edit-submitted-first-name" name="submitted[first_name]" value="" size="60" maxlength="40">
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 form-item webform-component webform-component-textfield webform-component--last-name">
+                                            <label class="element-invisible" for="edit-submitted-last-name">Last name <span class="form-required" title="This field is required.">*</span></label>
+                                            <input placeholder="LAST NAME" class="form-control form-text required" type="text" id="edit-submitted-last-name" name="submitted[last_name]" value="" size="60" maxlength="40">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 form-item webform-component webform-component-textfield webform-component--company-name">
+                                            <label class="element-invisible" for="edit-submitted-company-name">Company name <span class="form-required" title="This field is required.">*</span></label>
+                                            <input placeholder="COMPANY NAME" class="form-control form-text required" type="text" id="edit-submitted-company-name" name="submitted[company_name]" value="" size="60" maxlength="128">
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 form-item webform-component webform-component-textfield webform-component--job-title">
+                                            <label class="element-invisible" for="edit-submitted-job-title">Job title <span class="form-required" title="This field is required.">*</span></label>
+                                            <input placeholder="JOB TITLE" class="form-control form-text required" type="text" id="edit-submitted-job-title" name="submitted[job_title]" value="" size="60" maxlength="128">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 form-item webform-component webform-component-email webform-component--your-email">
+                                            <label class="element-invisible" for="edit-submitted-your-email">Corporate email <span class="form-required" title="This field is required.">*</span></label>
+                                            <input class="email form-control form-text form-email required" placeholder="CORPORATE EMAIL " type="email" id="edit-submitted-your-email" name="submitted[your_email]" size="60">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 form-item webform-component webform-component-textfield webform-component--phone-number">
+                                            <label class="element-invisible" for="edit-submitted-phone-number">Phone number <span class="form-required" title="This field is required.">*</span></label>
+                                            <input placeholder="PHONE NUMBER" class="form-control form-text required" type="text" id="edit-submitted-phone-number" name="submitted[phone_number]" value="" size="60" maxlength="128">
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 form-item webform-component webform-component-select webform-component--country">
+                                            <label class="element-invisible" for="edit-submitted-country">Country <span class="form-required" title="This field is required.">*</span></label>
+                                            <select class="form-control form-select required" id="edit-submitted-country" name="submitted[country]"><option value="" selected="selected">COUNTRY</option><option value="AF">Afghanistan</option><option value="AX">Aland Islands</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="BQ">Caribbean Netherlands</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo (Brazzaville)</option><option value="CD">Congo (Kinshasa)</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CW">Curaçao</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and McDonald Islands</option><option value="HN">Honduras</option><option value="HK">Hong Kong S.A.R., China</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao S.A.R., China</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="KP">North Korea</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestinian Territory</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russia</option><option value="RW">Rwanda</option><option value="BL">Saint Barthélemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin (French part)</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SX">Sint Maarten</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="KR">South Korea</option><option value="SS">South Sudan</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="VI">U.S. Virgin Islands</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VA">Vatican</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 form-item webform-component webform-component-select webform-component--where-did-you-hear-about-us">
+                                            <label class="element-invisible" for="edit-submitted-where-did-you-hear-about-us">Where did you hear about us? </label>
+                                            <select class="form-control form-select" id="edit-submitted-where-did-you-hear-about-us" name="submitted[where_did_you_hear_about_us]"><option value="" selected="selected">WHERE DID YOU HEAR ABOUT US?</option><option value="article_blog">Article/Blog</option><option value="colleague">Colleague</option><option value="customer_referral">Customer Referral</option><option value="email">Email</option><option value="event">Event</option><option value="market_analyst">Market Analyst</option><option value="partner">Partner</option><option value="press_release">Press Release</option><option value="search_engine">Search Engine</option><option value="social_media">Social Media</option><option value="speaker_session">Speaker Session</option><option value="user_group">User Group</option><option value="webinar">Webinar</option></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 form-item webform-component webform-component-textfield webform-component--application-platforms">
+                                            <label for="edit-submitted-application-platforms">Current application platforms, code language and Cloud status?  </label>
+                                            <input class="form-control form-text" type="text" id="edit-submitted-application-platforms" name="submitted[application_platforms]" value="" size="60" maxlength="128">
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-item webform-component webform-component-textfield webform-component--system-and-desired-state">
+                                            <label for="edit-submitted-system-and-desired-state">Current system state and desired state?  </label>
+                                            <input class="form-control form-text" type="text" id="edit-submitted-system-and-desired-state" name="submitted[system_and_desired_state]" value="" size="60" maxlength="128">
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-item webform-component webform-component-textarea webform-component--tell-us-about-specific-transformation-challenges">
+                                            <label for="edit-submitted-tell-us-about-specific-transformation-challenges">Tell us about specific transformation challenges.  </label>
+                                            <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea class="form-control form-textarea" id="edit-submitted-tell-us-about-specific-transformation-challenges" name="submitted[tell_us_about_specific_transformation_challenges]" cols="60" rows="5"></textarea>
+                                                <div class="grippie"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="details[sid]">
+                                <input type="hidden" name="details[page_num]" value="1">
+                                <input type="hidden" name="details[page_count]" value="1">
+                                <input type="hidden" name="details[finished]" value="0">
+                                <input type="hidden" name="form_build_id" value="form-WVeqchywOIqhXEd5h2uZxkUiIr5OHZh5IIp8MduqUnU">
+                                <input type="hidden" name="form_id" value="webform_client_form_1">
+                                <input type="hidden" name="webform_ajax_wrapper_id" value="webform-ajax-wrapper-1">
+                                <div class="form-actions">
+                                    <input class="webform-submit button-primary form-submit ajax-processed GoogleAnalyticsET-processed" id="edit-webform-ajax-submit-1" type="submit" name="op" value="SEND">
+                                </div>
+                            </div>
+                        </form>
+                    </div>                
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>

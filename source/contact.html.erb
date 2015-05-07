@@ -1,0 +1,64 @@
+---
+title: Contact
+layout: article
+link: contact
+---
+
+
+
+<div class="container-main">
+	<% data.SmartShift.Landing.each do |id, article| %>
+		<% if article.title == 'Contact' %>
+			<div class="view-content">
+				<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+					<div class="views-field views-field-nothing">        
+						<span class="field-content">                
+							<div id="" class="banner-area">
+								<div id="" class="row clearfix">
+									<div class="bannerarea-img">
+										<% if !article.bannerImage.empty? %>
+											<%= image_tag article.bannerImage.url %>
+										<% end %>
+									</div>
+									<div class="banner-content">
+										<div class="col-md-12 column">
+											<div class="home-slide" style="height: 433px;">
+												<div>
+													<div class="banner-title"><%= article["bannerTitle"] %></div>
+													<h1 class="banner-sub-title"><%= article["bannerSubTitle"] %></h1>
+												</div>
+											</div>
+										</div>                    
+									</div>
+								</div>
+							</div>
+						</span>  
+					</div>  
+				</div>
+			</div>
+	
+			<div class="panel-pane pane-views pane-cms-page row clearfix" id="about_desc">
+				<div class="pane-content">
+					<div class="view view-cms-page view-id-cms_page view-display-id-block_1 view-dom-id-904172ffba26e6ce050a5451f3b54f3c">
+						<div class="view-content">
+							<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+								<div class="views-field views-field-body">        
+									<div class="field-content">                    
+										<div class="col-md-12 column nopadding html_desc">
+											<div class="about_slide">
+												<div class="about_slide solutions-content">
+													<%= article["description"] %>
+												</div>
+											</div>
+										</div>
+									</div>  
+								</div>  
+							</div>
+						</div>
+					</div>  
+				</div>
+			</div>
+		<% end %>
+	<% end %>
+	<%= partial "/layouts/partials/footer" %>	
+</div>
