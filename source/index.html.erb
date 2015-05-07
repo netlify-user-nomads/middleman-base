@@ -280,49 +280,7 @@ title: Welcome to SmartShift
                                     </div>
                                 </div>
                                 <div class="panel-separator"></div>
-                                <div class="panel-pane pane-panels-mini pane-customers-slider row clearfix" id="keepup">
-                                    <div class="pane-content">
-                                        <div class="col-md-12 column">      
-                                            <div class="panel-pane pane-views pane-homepage-keep-up-to-date keepup_slide">
-                                                <h2 class="pane-title">Keep Up-to-date</h2>
-                                                <div class="pane-content">
-                                                    <div class="view view-homepage-keep-up-to-date view-id-homepage_keep_up_to_date view-display-id-page row view-dom-id-1bc7b32af6957299c724c308215fcf9f">
-                                                        <div class="view-header">
-                                                            <div class="keepup_brief">
-                                                                Read the latest smartShift articles, learn about innovation updates, join a webinar or meet us at one of our events.
-                                                            </div>
-                                                        </div>
-                                                        <div class="view-content">
-															<% data.SmartShift.Keep.each do |id, article| %>
-                                                            <div class="views-row views-row-1 views-row-odd views-row-first">
-                                                                <div class="views-field views-field-nothing">        
-                                                                    <span class="field-content">
-                                                                        <div class="col-md-3 col-sm-6">
-                                                                            <div class="thumbnail" style="height: 608px;">
-																			<% if !article.image.empty? %>
-																			  <%= image_tag article.image.url, alt: 'logo', class: 'img-responsive' %>
-																			<% end %>
-                                                                                <div class="caption">
-                                                                                    <h3><%= article["title"] %></h3>
-                                                                                    <div class="keep_upto_date_desc">
-                                                                                        <%= article["description"]  %>
-                                                                                    </div>
-																					<a href="<%= article["link"]  %>" class="readmore_style1 GoogleAnalyticsET-processed" target="_blank">Read More</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </span>  
-                                                                </div>  
-                                                            </div>
-															<% end %>
-                                                            
-                                                        </div>
-                                                    </div>  
-                                                </div>
-                                            </div>
-                                        </div>  
-                                    </div>
-                                </div>
+                                <%= partial "/layouts/partials/keep_up_to_date" %>	
                             </div>
                         </div>
                     </div>
