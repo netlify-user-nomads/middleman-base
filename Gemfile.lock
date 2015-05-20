@@ -145,6 +145,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  contentful
   contentful_middleman
   middleman (~> 3.3.10)
   middleman-blog (~> 3.5.3)

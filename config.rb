@@ -96,5 +96,10 @@ activate :contentful do |f|
   f.space         = {SmartShift: 'px0dm4wqzul1'}
   f.access_token  = '1afcf1f81058681241fe393b110e204546e9817ba1a00bdc869bb9bf935d6ca1'
   f.cda_query     = { include: 1 }
-  f.content_types = { Keep: '6k3plA0080AooWcqA202ME',Clients: 'VHutoNmkeIAAGguGiccWK',Landing: '4QkKtumA2ciCYy8kEOAYSc',Social: '5g7DG5tFxKOU2OSo6UIcaU',CallUs: '3hcGwEqN2UaoSSMM6eieUg'}
+  f.content_types = { Keep: '6k3plA0080AooWcqA202ME',
+					  Clients: 'VHutoNmkeIAAGguGiccWK',
+					  Landing: '4QkKtumA2ciCYy8kEOAYSc',
+					  Social: '5g7DG5tFxKOU2OSo6UIcaU',
+					  CallUs: '3hcGwEqN2UaoSSMM6eieUg',
+					  CaseStudy:  '6dqcI5zijSIAGQ6oASuqm'}
 end
