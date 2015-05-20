@@ -64,28 +64,20 @@ link: solution
 					<div class="view view-download-pdfs view-id-download_pdfs view-display-id-block view-dom-id-f306a3c422041b25e0980955aa7d4254">
 						<div class="view-content">
 							<% data.SmartShift.CaseStudy.each do |id, casestudy| %>
-							<% if casestudy.landingPage == 'Our Solutions' %>
-							  <div class="item active">
-								<div class="circle_slider_text_wrapper">
-								<div class="views-row views-row-1 views-row-odd views-row-first col-md-4 col-sm-4 col-lg-4">
-									<div class="views-field views-field-nothing">        
-										<span class="field-content">
-											<a href="<%= casestudy.file.url %>" class="btn btn-success btn-block"><strong><%= casestudy["title"] %></strong></a>
-										</span>  
-									</div>  
-								</div>
-							  </div>    
-							</div>
+								<% if casestudy.landingPage == 'Our Solutions' %>
+								  <div class="item active">
+									<div class="circle_slider_text_wrapper">
+										<div class="views-row views-row-1 views-row-odd views-row-first col-md-4 col-sm-4 col-lg-4">
+											<div class="views-field views-field-nothing">        
+												<span class="field-content">
+													<a href="<%= casestudy.file.url %>" class="btn btn-success btn-block"><strong><%= casestudy["title"] %></strong></a>
+												</span>  
+											</div>  
+										</div>
+								    </div>    
+								  </div>
+								<% end %>
 							<% end %>
-							<% end %>
-						
-							<div class="views-row views-row-2 views-row-even views-row-last col-md-4 col-sm-4 col-lg-4">
-								<div class="views-field views-field-nothing">        
-									<span class="field-content">
-										<a href="http://www.smartshifttech.com/system/files_force/Case%20Study%20Specialty%20Chemicals%20Company_smartShift%20Technologies_2015.pdf?download=1" class="btn btn-success btn-block"><strong>Specialty Chemicals Company Case Study on Automation-Driven Consolidation</strong></a>
-									</span>  
-								</div>  
-							</div>
 						</div>
 					</div>  
 				</div>
